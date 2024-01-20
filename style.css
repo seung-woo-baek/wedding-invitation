@@ -1,0 +1,248 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  font-family: 'Jeju Myeongjo', serif;
+}
+main {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 394px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  overflow: hidden;
+}
+.mainSwiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.mainSwiper .slide01 {
+  position: relative;
+}
+
+.mainSwiper .slide01 .main-background {
+  position: absolute;
+  width: 394px;
+  height: 100%;
+  background: url(./imgs/main-background.png) no-repeat, #e9eef1 50% / cover;
+  z-index: -1;
+}
+
+.mainSwiper .slide01 .title-wrap {
+  padding-top: 77px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 106px;
+}
+
+.mainSwiper .slide01 .title-wrap p {
+  color: #ff7d7d;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  font-family: Cormorant SC;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 16px;
+}
+
+.mainSwiper .slide01 .invite-text {
+  margin-top: 45px;
+  color: #555;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+
+.mainSwiper .slide01 .name-title-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mainSwiper .slide01 .name-title-wrap .name-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainSwiper .slide01 .name-title-wrap .name-box .name-sub{
+  margin-bottom: 7px;
+  color: #555;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.mainSwiper .slide01 .name-title-wrap .name-box .name-text{
+  width: 153px;
+  height: 43px;
+  color: #555;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.mainSwiper .slide01 .location-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.mainSwiper .slide01 .location-wrap .location-date{
+  color: #555;
+  text-align: center;
+  font-family: "Cormorant SC";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mainSwiper .slide01 .location-wrap .location-text{
+  color: #555;
+  text-align: center;
+  font-family: "Cormorant SC";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mainSwiper .slide01 .location-wrap .location-line{
+  display: inline-block;
+  width: 230px;
+  height: 1px;
+  margin: 6px 0;
+  background: #ddd;
+}
+
+.mainSwiper .arrow-right {
+  position: absolute;
+  bottom: 32px;
+  right: 17px;
+  width: 100px;
+  height: 30px;
+  background: url('./imgs/arrow-right.svg') center no-repeat;
+  z-index: 999;
+}
+
+.mainSwiper .arrow-left {
+  position: absolute;
+  bottom: 32px;
+  left: 17px;
+  width: 100px;
+  height: 30px;
+  background: url('./imgs/arrow-left.svg') center no-repeat;
+  z-index: 999;
+}
+
+.mainSwiper .background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  z-index: -1;
+}
+
+.mainSwiper .intro-parents-text{
+  position: absolute;
+  top: 546px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #555;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mainSwiper .intro-name{
+  position: absolute;
+  top: 580px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #555;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mainSwiper .slide03 .intro-parents-text, .mainSwiper .slide03 .intro-name{
+  color: #fff;
+}
+
+.slide02 .background{
+  background-image: url('./imgs/bride.png');
+}
+
+.slide03 .background{
+  background-image: url('./imgs/groom.png');
+}
+
+.slide04, .slide05, .slide06, .slide07{
+  background: #E1E6E9;;
+}
+
+.slide04 .invite-background{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 583px;
+  background-image: url('./imgs/invite-background.png');
+  background-size: cover;
+  z-index: -1;
+}
+
+.slide04 .invite-text{
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.slide04 .invite-text.poem01{
+  margin-top: 50px;
+}
+.slide04 .invite-text.poem02{
+  margin-top: 16px;
+}
+
+.slide05 h3, .slide06 h3, .slide07 h3{
+  margin-top: 72px;
+  color: #555;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, 40px);
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--swiper-pagination-color, #ff7d7d);
+}
