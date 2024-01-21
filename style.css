@@ -20,13 +20,15 @@ main {
   background-color: #fff;
   overflow: hidden;
 }
-.mainSwiper {
+.mainSwiper, .photoSwiper, .swiper-slide {
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 
 .mainSwiper .slide01 {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .mainSwiper .slide01 .main-background {
@@ -42,7 +44,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 106px;
+  justify-content: space-between;
+  flex-shrink: 2;
 }
 
 .mainSwiper .slide01 .title-wrap p {
@@ -161,7 +164,7 @@ main {
 
 .mainSwiper .intro-parents-text{
   position: absolute;
-  top: 546px;
+  bottom: calc(26.8% + 70px);
   left: 50%;
   transform: translateX(-50%);
   color: #555;
@@ -173,7 +176,7 @@ main {
 
 .mainSwiper .intro-name{
   position: absolute;
-  top: 580px;
+  bottom: 26.8%;
   left: 50%;
   transform: translateX(-50%);
   color: #555;
@@ -236,6 +239,149 @@ main {
   font-weight: 400;
   line-height: normal;
 }
+
+.slide07 .contact-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slide07 .contact-wrap h5{
+  margin-top: 31px;
+  color: #555;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.slide07 .contact-wrap .main-contact-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.slide07 .contact-wrap .main-contact-wrap .name{
+  color: #555;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.slide07 .contact-wrap .parent-contact-wrap{
+  display: flex;
+  width: 100%;
+  margin-top: 31px;
+}
+
+.slide07 .contact-wrap .parent-contact-wrap .parent-contact-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.slide07 .contact-wrap .parent-contact-wrap .name{
+  color: #555;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.slide07 .contact-wrap .account, .slide07 .contact-wrap a{
+  color: #555;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.slide07 .contact-wrap a{
+  text-decoration: none;
+}
+
+.photoSwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.arrow-down{
+  position: absolute;
+  bottom: 7.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 132px;
+  height: 26px;
+  background-image: url('./imgs/gallery-arrow-down.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.arrow-up{
+  position: absolute;
+  top: 7.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 132px;
+  height: 26px;
+  background-image: url('./imgs/gallery-arrow-up.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo01{
+  background-image: url('./imgs/gallery-main.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo01 h4{
+  position: absolute;
+  bottom: 17%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #FF7D7D;
+  text-align: center;
+  font-family: "Cormorant SC";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 62px;
+}
+
+.photo01 .arrow-down{
+  bottom: 10.7%;
+}
+
+.gallery-photo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 60px);
+  transform: translate(-50%, -50%);
+  aspect-ratio: 334/500;
+}
+
+.photo02 .gallery-photo{
+  background-image: url('./imgs/gallery-photo1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo03 .gallery-photo{
+  background-image: url('./imgs/gallery-photo1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
@@ -255,5 +401,27 @@ main {
   .mainSwiper{
     width: 100vh;
     height: 100vh;
+  }
+
+  .slide04 .invite-background{
+    bottom: -20%
+  }
+
+  .slide07 .contact-wrap .main-contact-wrap .name{
+    color: #555;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .slide07 .contact-wrap .parent-contact-wrap .name{
+    color: #555;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
