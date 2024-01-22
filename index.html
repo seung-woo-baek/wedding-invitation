@@ -319,40 +319,5 @@
         direction: 'vertical',
       });
     </script>
-    <script
-      type="text/javascript"
-      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a265a19b94a7e1e4c2b35738352bbec7&libraries=services"
-    ></script>
-    <script defer>
-      const seoulContainer = document.getElementById('seoul-map');
-
-      var seoulMapOptions = {
-        center: new kakao.maps.LatLng(37.50621431039079, 126.88541377327134),
-        level: 3,
-      };
-
-      const seoulMap = new kakao.maps.Map(seoulContainer, seoulMapOptions);
-
-      var seoulMarker = new kakao.maps.Marker({
-        position: new kakao.maps.LatLng(37.50621431039079, 126.88541377327134),
-      });
-
-      seoulMarker.setMap(seoulMap);
-
-      const jejuContainer = document.getElementById('jeju-map');
-
-      var jejuMapOptions = {
-        center: new kakao.maps.LatLng(37.50621431039079, 126.88541377327134),
-        level: 3,
-      };
-
-      const jejuMap = new kakao.maps.Map(jejuContainer, jejuMapOptions);
-
-      var jejuMarker = new kakao.maps.Marker({
-        position: new kakao.maps.LatLng(37.50621431039079, 126.88541377327134),
-      });
-
-      jejuMarker.setMap(jejuMap);
-    </script>
   </body>
 </html>
