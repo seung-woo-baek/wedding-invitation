@@ -61,23 +61,77 @@
             <p class="intro-name">백승우</p>
           </div>
           <div class="swiper-slide slide04">
-            <p class="invite-text poem01">봄의 그대는 벚꽃이었고<br/>
-              여름의 그대는 바람이었고<br/>
-              가을의 그대는 하늘이었고 <br/>
+            <p class="invite-text poem01">
+              봄의 그대는 벚꽃이었고<br />
+              여름의 그대는 바람이었고<br />
+              가을의 그대는 하늘이었고 <br />
               겨울의 그대는 하얀 눈이었다
             </p>
-            <p class="invite-text poem02">그대는 언제나<br/>
+            <p class="invite-text poem02">
+              그대는 언제나<br />
               행복 그 자체였다
             </p>
-            <p class="invite-text poem02">하나되어 맞이하는 삼월의 봄날,<br /> 소중한 걸음하시어 저희의 앞날을 축복해 주세요.</p>
+            <p class="invite-text poem02">-사계, 강현욱-</p>
+            <p class="invite-text poem02">
+              하나되어 맞이하는 삼월의 봄날,<br />
+              소중한 걸음하시어 저희의 앞날을 축복해 주세요.
+            </p>
             <div class="invite-background"></div>
             <p></p>
           </div>
           <div class="swiper-slide slide05">
             <h3>오시는 길 (제주 잔치)</h3>
+            <div class="map-box">
+              <div id="map" style="width: 80%; height: 400px"></div>
+            </div>
+            <script
+              type="text/javascript"
+              src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a265a19b94a7e1e4c2b35738352bbec7&libraries=services"
+            ></script>
+            <script>
+              var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+                mapOption = {
+                  center: new daum.maps.LatLng(36.633535, 127.425882), // 지도의 중심좌표
+                  level: 4, // 지도의 확대 레벨
+                };
+            </script>
           </div>
           <div class="swiper-slide slide06">
             <h3>오시는 길 (서울 본식)</h3>
+            <div class="map-box">
+              <div id="map" style="width: 80%; height: 400px"></div>
+            </div>
+            <script
+              type="text/javascript"
+              src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a265a19b94a7e1e4c2b35738352bbec7&libraries=services"
+            ></script>
+            <script>
+              var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+                mapOption = {
+                  center: new daum.maps.LatLng(36.633535, 127.425882), // 지도의 중심좌표
+                  level: 4, // 지도의 확대 레벨
+                };
+            </script>
+          </div>
+          <div class="swiper-slide slide08">
+            <div class="swiper photoSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide photo01">
+                  <h4>PHOTO<br />GALLERY</h4>
+                  <div class="arrow-down"></div>
+                </div>
+                <div class="swiper-slide photo02 gallery">
+                  <div class="gallery-photo"></div>
+                  <div class="arrow-up"></div>
+                  <div class="arrow-down"></div>
+                </div>
+                <div class="swiper-slide photo03 gallery">
+                  <div class="gallery-photo"></div>
+                  <div class="arrow-up"></div>
+                  <div class="arrow-down"></div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="swiper-slide slide07">
             <h3>마음 전하실 곳</h3>
@@ -91,13 +145,13 @@
               <div class="parent-contact-wrap">
                 <div class="parent-contact-box">
                   <h6 class="name">부 김인창</h6>
-                  <p class="account">295401-01-209315 국민은행</p>
-                  <a href="tel:01071242119">전화</a>
+                  <p class="account">325-02-190174 SC제일은행</p>
+                  <a href="tel:01037805465">전화</a>
                 </div>
                 <div class="parent-contact-box">
                   <h6 class="name">모 조순애</h6>
-                  <p class="account">295401-01-209315 국민은행</p>
-                  <a href="tel:01071242119">전화</a>
+                  <p class="account">007-012590-03-012 기업은행</p>
+                  <a href="tel:01047825465">전화</a>
                 </div>
               </div>
             </div>
@@ -106,38 +160,18 @@
               <div class="main-contact-wrap">
                 <h6 class="name">백승우</h6>
                 <p class="account">874102-01-248282 국민은행</p>
-                <a href="tel:01071242119">전화</a>
+                <a href="tel:01049208220">전화</a>
               </div>
               <div class="parent-contact-wrap">
                 <div class="parent-contact-box">
                   <h6 class="name">부 백화정</h6>
-                  <p class="account">295401-01-209315 국민은행</p>
-                  <a href="tel:01071242119">전화</a>
+                  <p class="account">295401-01-209315 신한은행</p>
+                  <a href="tel:01086625104">전화</a>
                 </div>
                 <div class="parent-contact-box">
                   <h6 class="name">모 김인숙</h6>
-                  <p class="account">295401-01-209315 국민은행</p>
-                  <a href="tel:01071242119">전화</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide slide08">
-            <div class="swiper photoSwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide photo01">
-                  <h4>PHOTO<br/>GALLERY</h4>
-                  <div class="arrow-down"></div>
-                </div>
-                <div class="swiper-slide photo02 gallery">
-                  <div class="gallery-photo"></div>
-                  <div class="arrow-up"></div>
-                  <div class="arrow-down"></div>
-                </div>
-                <div class="swiper-slide photo03 gallery">
-                  <div class="gallery-photo"></div>
-                  <div class="arrow-up"></div>
-                  <div class="arrow-down"></div>
+                  <p class="account">295401-01-209315 하나은행</p>
+                  <a href="tel:01041928330">전화</a>
                 </div>
               </div>
             </div>
@@ -155,12 +189,12 @@
           el: '.swiper-pagination',
         },
         navigation: {
-            nextEl: ".arrow-right",
-            prevEl: ".arrow-left"
-          }
+          nextEl: '.arrow-right',
+          prevEl: '.arrow-left',
+        },
       });
       var swiper = new Swiper('.photoSwiper', {
-        direction: "vertical",
+        direction: 'vertical',
       });
     </script>
   </body>
