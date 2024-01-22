@@ -377,18 +377,95 @@ main {
   width: calc(100% - 60px);
   transform: translate(-50%, -50%);
   aspect-ratio: 334/500;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .photo02 .gallery-photo {
   background-image: url('./imgs/gallery-photo1.png');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .photo03 .gallery-photo {
-  background-image: url('./imgs/gallery-photo1.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url('./imgs/폴라로이드.jpg');
+}
+
+.photo04 .gallery-photo {
+  background-image: url('./imgs/IMG_0110.jpg');
+}
+
+.photo05 .gallery-photo {
+  background-image: url('./imgs/IMG_0143.jpg');
+}
+
+.photo06 .gallery-photo {
+  background-image: url('./imgs/IMG_0164.jpg');
+}
+
+.photo07 .gallery-photo {
+  background-image: url('./imgs/IMG_0172.jpg');
+}
+
+.photo08 .gallery-photo {
+  background-image: url('./imgs/IMG_0213.jpg');
+}
+
+.photo09 .gallery-photo {
+  background-image: url('./imgs/IMG_0230.jpg');
+}
+
+.photo10 .gallery-photo {
+  background-image: url('./imgs/IMG_0262.jpg');
+}
+.photo11 .gallery-photo {
+  background-image: url('./imgs/IMG_0280.jpg');
+}
+.photo13 .gallery-photo {
+  background-image: url('./imgs/IMG_0333.jpg');
+}
+.photo14 .gallery-photo {
+  background-image: url('./imgs/IMG_0373.jpg');
+}
+.photo15 .gallery-photo {
+  background-image: url('./imgs/IMG_0492.jpg');
+}
+.photo16 .gallery-photo {
+  background-image: url('./imgs/IMG_0536.jpg');
+}
+.photo17 .gallery-photo {
+  background-image: url('./imgs/IMG_0560.jpg');
+}
+.photo18 .gallery-photo {
+  background-image: url('./imgs/IMG_0575.jpg');
+}
+.photo19 .gallery-photo {
+  background-image: url('./imgs/IMG_0675.jpg');
+}
+.photo20 .gallery-photo {
+  background-image: url('./imgs/IMG_0708.jpg');
+}
+.photo21 .gallery-photo {
+  background-image: url('./imgs/IMG_0739_컬러로.jpg');
+}
+.photo22 .gallery-photo {
+  background-image: url('./imgs/IMG_0783.jpg');
+}
+.photo23 .gallery-photo {
+  background-image: url('./imgs/IMG_0814.jpg');
+}
+.photo24 .gallery-photo {
+  background-image: url('./imgs/IMG_0830.jpg');
+}
+.photo25 .gallery-photo {
+  background-image: url('./imgs/IMG_0850.jpg');
+}
+.photo26 .gallery-photo {
+  background-image: url('./imgs/IMG_0910.jpg');
+}
+.photo27 .gallery-photo {
+  background-image: url('./imgs/img719.jpg');
 }
 
 .map-box {
