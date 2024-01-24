@@ -41,17 +41,25 @@ main {
   z-index: -1;
 }
 
-.mainSwiper .slide01 .title-wrap {
+.mainSwiper .slide01 .main-content-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
   padding-top: 77px;
+}
+
+.mainSwiper .slide01 .title-wrap {
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  flex-shrink: 2;
+  flex-grow: 1;
 }
 
 .mainSwiper .slide01 .title-wrap p {
-  color: #ff7d7d;
+  color: #cacaca;
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
   font-family: Cormorant SC;
@@ -132,6 +140,34 @@ main {
   height: 1px;
   margin: 6px 0;
   background: #ddd;
+}
+
+.mainSwiper .route-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin-top: 10px;
+  gap: 12px;
+}
+
+.mainSwiper .route-wrap .route-box{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.mainSwiper .route-wrap .route-box .route-title{
+  font-weight: 700;
+}
+
+.mainSwiper .route-wrap .route-box .route-text{
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.mainSwiper .route-wrap .route-box .route-text.small{
+  font-size: 10px;
 }
 
 .mainSwiper .arrow-right {
@@ -357,7 +393,7 @@ main {
   bottom: 17%;
   left: 50%;
   transform: translateX(-50%);
-  color: #ff7d7d;
+  color: #727272;
   text-align: center;
   font-family: 'Cormorant SC';
   font-size: 50px;
@@ -388,90 +424,87 @@ main {
   background-image: url('./imgs/gallery-photo1.png');
 }
 
-.photo03 .gallery-photo {
-  background-image: url('./imgs/폴라로이드.jpg');
-}
-
 .photo04 .gallery-photo {
-  background-image: url('./imgs/IMG_0110.jpg');
+  background-image: url('./imgs/IMG_0110.png');
 }
 
 .photo05 .gallery-photo {
-  background-image: url('./imgs/IMG_0143.jpg');
+  background-image: url('./imgs/IMG_0143.png');
 }
 
 .photo06 .gallery-photo {
-  background-image: url('./imgs/IMG_0164.jpg');
+  background-image: url('./imgs/IMG_0164.png');
 }
 
 .photo07 .gallery-photo {
-  background-image: url('./imgs/IMG_0172.jpg');
+  background-image: url('./imgs/IMG_0172.png');
 }
 
 .photo08 .gallery-photo {
-  background-image: url('./imgs/IMG_0213.jpg');
+  background-image: url('./imgs/IMG_0213.png');
 }
 
 .photo09 .gallery-photo {
-  background-image: url('./imgs/IMG_0230.jpg');
+  background-image: url('./imgs/IMG_0230.png');
 }
 
 .photo10 .gallery-photo {
-  background-image: url('./imgs/IMG_0262.jpg');
+  background-image: url('./imgs/IMG_0262.png');
 }
 .photo11 .gallery-photo {
-  background-image: url('./imgs/IMG_0280.jpg');
+  background-image: url('./imgs/IMG_0280.png');
 }
 .photo13 .gallery-photo {
-  background-image: url('./imgs/IMG_0333.jpg');
+  background-image: url('./imgs/IMG_0333.png');
 }
 .photo14 .gallery-photo {
-  background-image: url('./imgs/IMG_0373.jpg');
+  background-image: url('./imgs/IMG_0373.png');
 }
 .photo15 .gallery-photo {
-  background-image: url('./imgs/IMG_0492.jpg');
+  background-image: url('./imgs/IMG_0492.png');
 }
 .photo16 .gallery-photo {
-  background-image: url('./imgs/IMG_0536.jpg');
+  background-image: url('./imgs/IMG_0536.png');
 }
 .photo17 .gallery-photo {
-  background-image: url('./imgs/IMG_0560.jpg');
+  background-image: url('./imgs/IMG_0560.png');
 }
 .photo18 .gallery-photo {
-  background-image: url('./imgs/IMG_0575.jpg');
+  background-image: url('./imgs/IMG_0575.png');
 }
 .photo19 .gallery-photo {
-  background-image: url('./imgs/IMG_0675.jpg');
+  background-image: url('./imgs/IMG_0675.png');
 }
 .photo20 .gallery-photo {
-  background-image: url('./imgs/IMG_0708.jpg');
+  background-image: url('./imgs/IMG_0708.png');
 }
 .photo21 .gallery-photo {
-  background-image: url('./imgs/IMG_0739_컬러로.jpg');
+  background-image: url('./imgs/IMG_0739_컬러로.png');
 }
 .photo22 .gallery-photo {
-  background-image: url('./imgs/IMG_0783.jpg');
+  background-image: url('./imgs/IMG_0783.png');
 }
 .photo23 .gallery-photo {
-  background-image: url('./imgs/IMG_0814.jpg');
+  background-image: url('./imgs/IMG_0814.png');
 }
 .photo24 .gallery-photo {
-  background-image: url('./imgs/IMG_0830.jpg');
+  background-image: url('./imgs/IMG_0830.png');
 }
 .photo25 .gallery-photo {
-  background-image: url('./imgs/IMG_0850.jpg');
-}
-.photo26 .gallery-photo {
-  background-image: url('./imgs/IMG_0910.jpg');
+  background-image: url('./imgs/IMG_0850.png');
 }
 .photo27 .gallery-photo {
-  background-image: url('./imgs/img719.jpg');
+  background-image: url('./imgs/img719.png');
 }
 
 .map-box {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin-top: 60px;
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  margin-top: 20px;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
@@ -493,6 +526,10 @@ main {
   .mainSwiper {
     width: 100vh;
     height: 100vh;
+  }
+
+  .mainSwiper .slide01 .main-content-wrap{
+    padding-top: 40px;
   }
 
   .slide04 .invite-background {
