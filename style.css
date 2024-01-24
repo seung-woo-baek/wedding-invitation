@@ -383,9 +383,10 @@ main {
 }
 
 .photo01 {
-  background-image: url('./imgs/gallery-main.png');
+  background-image: url('./imgs/IMG_0333.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .photo01 h4 {
