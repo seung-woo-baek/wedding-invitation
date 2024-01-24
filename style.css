@@ -423,6 +423,10 @@ main {
 .photo02 .gallery-photo {
   background-image: url('./imgs/IMG_0910.png');
 }
+.photo03 .gallery-photo {
+  background-image: url('./imgs/IMG_0059.jpeg');
+}
+
 
 .photo04 .gallery-photo {
   background-image: url('./imgs/IMG_0110.png');
@@ -452,7 +456,7 @@ main {
   background-image: url('./imgs/IMG_0262.png');
 }
 .photo11 .gallery-photo {
-  background-image: url('./imgs/IMG_0280.png');
+  background-image: url('./imgs/IMG_0280.jpeg');
 }
 .photo13 .gallery-photo {
   background-image: url('./imgs/IMG_0333.png');
@@ -488,7 +492,7 @@ main {
   background-image: url('./imgs/IMG_0814.png');
 }
 .photo24 .gallery-photo {
-  background-image: url('./imgs/IMG_0830.png');
+  background-image: url('./imgs/IMG_0830.jpeg');
 }
 .photo25 .gallery-photo {
   background-image: url('./imgs/IMG_0850.png');
